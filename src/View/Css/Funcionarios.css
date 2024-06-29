@@ -1,0 +1,119 @@
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+th {
+    background-color: #f2f2f2;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content a:hover {background-color: #f1f1f1}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+    padding-top: 60px;
+}
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 1em;
+}
+
+.container_cabecalho{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: fit;
+}
+
+.container_cabecalho > button, .container_modal > button {
+    border:1px solid rgb(113, 113, 113);
+    border-radius: 4px;
+    background-color: rgb(255, 255, 255);
+    font-size: 16px;
+    padding: 4px 8px;
+}
+
+.container_cabecalho > button:active{
+    background-color: rgb(194, 194, 194);
+}
+
+.container_modal{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.container_modal > input {
+    width: 100%;
+    text-align: center;
+    padding: 8px 4px;
+}
+
+
+.acao img{
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.acao{
+    display: flex;
+    gap: 4px;
+    width: 100%;
+    justify-content: center;
+}
+
+.acao button{
+    border: none;
+    background-color: transparent;
+}

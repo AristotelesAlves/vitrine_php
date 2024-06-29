@@ -1,0 +1,71 @@
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    background: rgb(120,193,248);
+    background: radial-gradient(circle, rgba(120,193,248,1) 0%, rgba(30,82,133,1) 100%);
+}
+
+h1 {
+    color: white;
+}
+
+form {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap:4px;
+    width: 30%;
+}
+
+form > button {
+    padding: 5px 10px;
+    background-color: blue;
+    color: white;
+    width: 40%;
+    margin:8px auto;
+    font-size: 20px;
+    border: none;
+    border-radius: 4px;
+   
+}
+form > button :hover {
+    background-color: rgba(0, 0, 255, 0.774);
+
+}
+form > label {
+    font-weight: 500;
+    font-size: 29px;
+    color:white;
+}
+.container_radios {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    font-size: 18px;
+    margin-top: 8px;
+    color: white;
+}
+
+.container_input{
+    display: flex;
+    width: 100%;
+    gap: 4;
+    overflow: hidden;
+    border-radius: 4px;
+}
+
+.container_input > input {
+    width: 100%;
+    font-size: 20px;
+}
+
+.container_input > img{
+    background-color: blue;
+    width: 25px;
+    padding: 8px;
+}
