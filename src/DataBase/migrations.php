@@ -62,7 +62,39 @@ class Migrations {
     }
 
     public function adm(){
-        $sql = "INSERT INTO usuarios (nome, emai, senha, tipo,) VALUES ('adm', 'adm@gmail.com', 'adm', 'adm')";
+        $sql = "INSERT INTO usuarios (nome, emaiL, senha, tipo) VALUES ('adm', 'adm@gmail.com', 'adm', 'adm')";
+        $stm = $this->conexao->prepare($sql);
+        if($stm->execute() == 'TRUE'){
+            echo 'Usuario adm criado com sucesso!';
+        }else {
+            echo 'erro ao criar usuario';
+        }
+    }
+
+    public function colar(){
+        $sql = "INSERT INTO categorias (nome) VALUES ('colar');";
+        $stm = $this->conexao->prepare($sql);
+        if($stm->execute() == 'TRUE'){
+            echo 'Usuario adm criado com sucesso!';
+        }else {
+            echo 'erro ao criar usuario';
+        }
+    }
+
+
+    public function brinco(){
+        $sql = "INSERT INTO categorias (nome) VALUES ('brinco')";
+        $stm = $this->conexao->prepare($sql);
+        if($stm->execute() == 'TRUE'){
+            echo 'Usuario adm criado com sucesso!';
+        }else {
+            echo 'erro ao criar usuario';
+        }
+    }
+
+
+    public function pulseira(){
+        $sql = "INSERT INTO categorias (nome) VALUES ('pulseira')";
         $stm = $this->conexao->prepare($sql);
         if($stm->execute() == 'TRUE'){
             echo 'Usuario adm criado com sucesso!';
@@ -81,5 +113,9 @@ $migracoes->Usuarios();
 $migracoes->Categorias();
 $migracoes->Produtos();
 $migracoes->adm();
+$migracoes->colar();
+$migracoes->brinco();
+$migracoes->pulseira();
+
 
 ?>
